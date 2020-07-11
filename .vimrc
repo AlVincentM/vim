@@ -13,9 +13,9 @@ set undofile
 set number
 set background=dark
 
+" Plugins
 call plug#begin('~/.vim/plugged')
 
-Plug 'tpope/sorround-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'preservim/nerdcommenter'
 Plug 'valloric/youcompleteme'
@@ -24,5 +24,19 @@ Plug 'yggdroot/indentline'
 Plug 'scrooloose/nerdtree'
 Plug 'airblade/vim-gitgutter'
 Plug 'flazz/vim-colorschemes'
+Plug 'jistr/vim-nerdtree-tabs'
+Plug 'raimondi/delimitmate'
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
+
+" plugin settings
+
+let g:NERDSpaceDelims = 1
+let g:NERDCompactSexyComs = 1
+
+map <C-n> :NERDTreeToggle<CR>
+
+" colorschemes
+
+:colorscheme molokai
