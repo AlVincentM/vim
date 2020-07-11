@@ -39,4 +39,4 @@ map <C-n> :NERDTreeToggle<CR>
 
 " colorschemes
 
-:colorscheme molokai
+:colorscheme codedark 
