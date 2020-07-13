@@ -13,6 +13,7 @@ set undofile
 set number
 set background=dark
 set relativenumber
+set encoding=UTF-8
 
 " Plugins
 call plug#begin('~/.vim/plugged')
@@ -28,6 +29,8 @@ Plug 'flazz/vim-colorschemes'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'raimondi/delimitmate'
 Plug 'tpope/vim-fugitive'
+Plug 'altercation/vim-colors-solarized'
+Plug 'jistr/vim-nerdtree-tabs'
 
 call plug#end()
 
