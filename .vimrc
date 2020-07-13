@@ -12,6 +12,7 @@ set undodir=~/.vim/undodir
 set undofile
 set number
 set background=dark
+set relativenumber
 
 " Plugins
 call plug#begin('~/.vim/plugged')
@@ -37,6 +38,12 @@ let g:NERDCompactSexyComs = 1
 
 map <C-n> :NERDTreeToggle<CR>
 
+" YCM settings
+
+let g:ycm_key_list_select_completion = ['<TAB>', '<Down>']
+let g:ycm_add_preview_to_completeopt = 1
+let g:ycm_auto_close_preview_window_after_completion = 1
+let g:ycm_auto_close_preview_window_after_insertion = 1
 " colorschemes
 
 :colorscheme codedark 
