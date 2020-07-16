@@ -20,8 +20,6 @@ set encoding=UTF-8
 " Press z to save file 
 nnoremap z :w<CR>
 " Press / to comment out the line
-nnoremap / :call NERDComment("n","toggle")<CR>
-" nnoremap // :call NERDComment("x", "toggle")<CR>
 
  " Plugins
 call plug#begin('~/.vim/plugged')
