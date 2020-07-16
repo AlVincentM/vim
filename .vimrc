@@ -15,7 +15,15 @@ set background=dark
 set relativenumber
 set encoding=UTF-8
 
-" Plugins
+" Keymaps
+
+" Press z to save file 
+nnoremap z :w<CR>
+" Press / to comment out the line
+nnoremap / :call NERDComment("n","toggle")<CR>
+" nnoremap // :call NERDComment("x", "toggle")<CR>
+
+ " Plugins
 call plug#begin('~/.vim/plugged')
 
 Plug 'vim-airline/vim-airline'
@@ -38,6 +46,9 @@ call plug#end()
 
 let g:NERDSpaceDelims = 1
 let g:NERDCompactSexyComs = 1
+let NERDTreeMapOpenInTab='<TAB>'
+let NERDTreeMapOpenInTabSilent='<ENTER>'
+
 
 map <C-n> :NERDTreeToggle<CR>
 
@@ -47,6 +58,7 @@ let g:ycm_key_list_select_completion = ['<TAB>', '<Down>']
 let g:ycm_add_preview_to_completeopt = 1
 let g:ycm_auto_close_preview_window_after_completion = 1
 let g:ycm_auto_close_preview_window_after_insertion = 1
+
 " colorschemes
 
 :colorscheme codedark 
